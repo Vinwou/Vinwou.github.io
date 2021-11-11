@@ -1,4 +1,55 @@
 body {
-    background-color:#0F728A;
+        background-color:#0F728A;
+        margin: 0 auto;
+      }
 
+
+
+header {
+        background-color: cornflowerblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Ca met aligné vertical */
+        align-items: center; /* Et ici horizontal */
     }
+
+div.title1 {
+    background-color: rgba(255, 255, 255, 0.623);
+    font-family: 'Mochiy Pop One', sans-serif; /* Trouvé sur google font */
+}
+
+
+/* Slider , juste pour les images pour l'instant */
+div.slides {
+    display: flex;
+    flex-direction: row;
+    animation: glisse 15s infinite ease;
+}
+
+img {
+    width: 300px;
+}
+/* Ici on marque les animations du slider, et quand c'st fini on s'en sert pour la div.slide en animation */
+@keyframes glisse{ 
+                        0% {
+                            transform: translateX(0);
+                        }
+
+                        10% {
+                            transform: translateX(0);
+                        }
+
+                        33% {
+                            transform: translateX(-500);
+                        }
+
+                        66% {
+                            transform: translateX(-500);
+                        }
+
+                        100% {
+                            transform: translateX(0);
+                        }
+
+                 }
+
