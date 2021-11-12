@@ -22,34 +22,42 @@ div.title1 {
 /* Slider , juste pour les images pour l'instant */
 div.slides {
     display: flex;
-    flex-direction: row;
-    animation: glisse 15s infinite ease;
+    flex-direction: row wrap;
+    justify-content: space-evenly;
+    animation: glisse 3s linear 1s infinite alternate;
 }
+
+
 
 img {
     width: 300px;
 }
 /* Ici on marque les animations du slider, et quand c'st fini on s'en sert pour la div.slide en animation */
-@keyframes glisse{ 
-                        0% {
-                            transform: translateX(0);
-                        }
+                 @keyframes glisse {
+                     from {
+                        margin-left: 40%;
+                        width: 50%;
+                      }
+                    
+                      to {
+                        margin-left: 50%;
+                        width: 50%;
+                      }
+                  }
 
-                        10% {
-                            transform: translateX(0);
-                        }
 
-                        33% {
-                            transform: translateX(-500);
-                        }
 
-                        66% {
-                            transform: translateX(-500);
-                        }
+.navigation {
 
-                        100% {
-                            transform: translateX(0);
-                        }
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0; 
+   
+    background: deepskyblue;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 25px;
+    
 
-                 }
-
+}
