@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+                <style>
+                            *{
+                            box-sizing: border-box;
+                            font-size: 18px;
+                            }
+                            body {
+                            display: flex;
+                            flex-direction: column;
+                            min-height: 100vh;
+                            margin: 0;
+                            }
+                            .main { display: flex;  flex: 1; }
+                            .main > article { flex: 1; }
+                            .main > nav, .main > aside { flex: 0 0 20vw; background: #d5dce8; }
+                            .main > nav { order: -1; }
+                            header, footer { background: #1c87c9; height: 15vh; }
+                            header, footer, article, nav, aside { padding: 1em; }
+                </style>
+
+
+
+
+        <body>
+                            <header>Titre</header>
+                            <div class="main">
+                            <article>Article</article>
+                            <nav>Nav</nav>
+                            <aside>Aside</aside>
+                            </div>
+                            <footer>Footer</footer>
+        </body>
+
+
+
+
+</html>

@@ -21,28 +21,30 @@ div.title1 {
 
 /* Slider , juste pour les images pour l'instant */
 div.slides {
-    display: flex;
-    flex-direction: row wrap;
+    display: flex; /* définition de la zone de conteneur flexible au niveau intégré). Sinon, le navigateur ignore toutes les propriétés Flexbox */
+    flex-direction: row-reverse;  /* Par défaut, tous les éléments flex tiennent sur une seule ligne et, si les éléments flex sont trop larges pour le conteneur, ils débordent. Pour éviter cela, utilisez la propriété flex-wrap pour envelopper les éléments. */
     justify-content: space-evenly;
     animation: glisse 3s linear 1s infinite alternate;
+    gap: 60px;
 }
+
 
 
 
 img {
     width: 300px;
 }
+
+
 /* Ici on marque les animations du slider, et quand c'st fini on s'en sert pour la div.slide en animation */
                  @keyframes glisse {
                      from {
-                        margin-left: 40%;
-                        width: 50%;
-                      }
+                        transform: translate(-10px,0px); /* translate(sur x, sur y); */
+                          }
                     
-                      to {
-                        margin-left: 50%;
-                        width: 50%;
-                      }
+                       to {
+                        transform: translate(10px,0px);
+                          } 
                   }
 
 
@@ -53,11 +55,10 @@ img {
     flex-flow: row wrap;
     justify-content: space-evenly;
     list-style: none;
-    margin: 0; 
-   
+    margin: 1; 
     background: deepskyblue;
     font-family: 'Press Start 2P', cursive;
-    font-size: 25px;
+    font-size: 13px;
     
 
 }
