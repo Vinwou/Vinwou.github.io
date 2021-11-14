@@ -57,8 +57,31 @@ img {
     list-style: none;
     margin: 1; 
     background: deepskyblue;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Roboto', sans-serif;
+    /* font-size: 13px; */
+
+}
+
+.menu {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+
+
+
+}
+
+.main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 1; 
+    background: deepskyblue;
+    font-family: 'Road Rage', cursive;
     font-size: 13px;
-    
+
+
+
 
 }
