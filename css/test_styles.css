@@ -1,0 +1,92 @@
+* {
+    margin: 0px;
+    padding: 0px 
+}
+
+.lu:hover {
+    box-shadow: -10px 5px 2px 1px rgb(77, 85, 100);
+    transition: 0.3s all;
+
+
+
+}
+
+#main-container {
+    width: 100%;
+    margin: 0px auto;
+}
+#header {
+    width: 100%;
+    background-color: rgb(114, 42, 42);
+    padding: 10px;
+    color: rgb(196, 131, 131);
+}
+#header:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+#header section {
+    float: left;
+    width: 20%;
+    font-size: 18px;
+    font-weight: bold;
+}
+#header nav {
+    width: 50%;
+    float: left;
+}
+#header nav ul {
+    list-style: none;
+}
+#header nav ul li {
+    float: left;
+    min-width: 10%;
+    padding: 4px;
+    margin-left: 10px;
+    background-color: #ece6e1;
+    text-align: center;
+    color: rgb(131, 61, 61);
+}
+#header nav ul li a, a {
+    text-decoration: none;
+}
+#main-body-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 12px;
+    padding: 20px; /* Combien je laisse de px autour de mon contenu */
+    margin: 10px;
+ }
+#main-body-container:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+#display-ads{
+    padding: 20px;
+    margin: 20px;
+    background: #e5e5e5;
+}
+#main-article {
+    float: left;
+    width: 60%;
+    min-height: 450px;
+    background: #e5e5e5;
+}
+#sidebar {
+    float: right;
+    width: 38%;
+    min-height: 450px;
+    background: #e5e5e5;
+}
+#footer {
+    width: 100%;
+    background-color: rgb(139, 70, 70);
+    padding: 10px;
+    color: white;
+}
