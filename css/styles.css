@@ -11,6 +11,7 @@ header {
         flex-direction: column;
         justify-content: center; /* Ca met aligné vertical */
         align-items: center; /* Et ici horizontal */
+        
     }
 
 div.title1 {
@@ -23,17 +24,16 @@ div.title1 {
 div.slides {
     display: flex; /* définition de la zone de conteneur flexible au niveau intégré). Sinon, le navigateur ignore toutes les propriétés Flexbox */
     flex-direction: row-reverse;  /* Par défaut, tous les éléments flex tiennent sur une seule ligne et, si les éléments flex sont trop larges pour le conteneur, ils débordent. Pour éviter cela, utilisez la propriété flex-wrap pour envelopper les éléments. */
-    justify-content: space-evenly;
+    justify-content: space-between;
     animation: glisse 3s linear 1s infinite alternate;
     gap: 60px;
+        
 }
 
 
 
 
-img {
-    width: 300px;
-}
+
 
 
 /* Ici on marque les animations du slider, et quand c'st fini on s'en sert pour la div.slide en animation */
@@ -58,14 +58,20 @@ img {
     margin: 1; 
     background: deepskyblue;
     font-family: 'Roboto', sans-serif;
-      /* font-size: 13px; */
+
 
 }
 
 .menu {
     display: flex;
     flex-flow: column;
-    justify-content: space-evenly;
+    list-style: none;
+    margin: auto;
+    gap: 10px;
+  
+  
+   
+    
 
 
 
@@ -79,7 +85,7 @@ img {
     margin: 1; 
     background: deepskyblue;
     font-family: 'Road Rage', cursive;
-    font-size: 13px;
+
 
 
 
