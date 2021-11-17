@@ -1,20 +1,16 @@
 * {
     margin: 0px;
-    padding: 0px 
-}
-
-.lu:hover {
-    box-shadow: -10px 5px 2px 1px rgb(77, 85, 100);
-    transition: 0.3s all;
-
-
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
 
 }
 
-#main-container {
-    width: 100%;
-    margin: 0px auto;
+.item:hover {
+    box-shadow: -5px 3px 1px 1px rgb(168, 168, 168);
+    transition: 0.3s;
 }
+
+
 #header {
     width: 100%;
     background-color: rgb(114, 42, 42);
@@ -34,14 +30,17 @@
     font-size: 18px;
     font-weight: bold;
 }
-#header nav {
+
+
+nav ul {
     width: 50%;
     float: left;
-}
-#header nav ul {
     list-style: none;
 }
-#header nav ul li {
+
+
+
+header nav ul li {
     float: left;
     min-width: 10%;
     padding: 4px;
@@ -53,40 +52,13 @@
 #header nav ul li a, a {
     text-decoration: none;
 }
-#main-body-container {
+
+
+.box {
     display: flex;
-    justify-content: space-evenly;
-    gap: 12px;
+    flex-direction: row;
+    justify-content: space-around;
     padding: 20px; /* Combien je laisse de px autour de mon contenu */
-    margin: 10px;
- }
-#main-body-container:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-}
-#display-ads{
-    padding: 20px;
-    margin: 20px;
-    background: #e5e5e5;
-}
-#main-article {
-    float: left;
-    width: 60%;
-    min-height: 450px;
-    background: #e5e5e5;
-}
-#sidebar {
-    float: right;
-    width: 38%;
-    min-height: 450px;
-    background: #e5e5e5;
-}
-#footer {
-    width: 100%;
-    background-color: rgb(139, 70, 70);
-    padding: 10px;
-    color: white;
+    gap: 12px;
+    background-color: burlywood;
 }

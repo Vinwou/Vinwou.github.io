@@ -25,7 +25,7 @@ div.slides {
     display: flex; /* définition de la zone de conteneur flexible au niveau intégré). Sinon, le navigateur ignore toutes les propriétés Flexbox */
     flex-direction: row-reverse;  /* Par défaut, tous les éléments flex tiennent sur une seule ligne et, si les éléments flex sont trop larges pour le conteneur, ils débordent. Pour éviter cela, utilisez la propriété flex-wrap pour envelopper les éléments. */
     justify-content: space-between;
-    animation: glisse 3s linear 1s infinite alternate;
+    animation: glisse 3s linear 1s infinite alternate ease;
     gap: 60px;
         
 }
