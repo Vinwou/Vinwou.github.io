@@ -1,96 +1,128 @@
-<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 
-<html>
+    <link rel="stylesheet" href="formes\fontstyle.css">
+    <link rel="stylesheet" media="screen and (max-width: 700px)" href="formes\petiteresolution.css" />
 
-<!-- ENLEVE le bleu et souligné du lien hypertext pour la page Index -->
-        <style type="text/css"> 
-                    a:link 
-                    { 
-                    text-decoration:none; 
-                    }       
-        </style>
-
-
-
-
-
-                <head>
-                    <nav>
-                        <ul class="navigation">
-                            <li><a href="page1.html">CYCLORBUSIER</a></li>
-                            <li><a href="#">Industrialisation</a></li>
-                            <li><a href="#">Production</a></li>
-                            <li><a href="conception.html">Conception préliminaire</a></li>
-                            <li><a href="codage.html">Codage</a></li>            
-                        </ul>
-                    </nav>
+    <style type="text/css"> 
+        a:link 
+        { 
+        text-decoration:none; 
+        color: black;
+        } 
+    </style>
 
 
 
-                        <!--DEBUT : Les meta données  -->
-                    <meta charset="utf-8">
-                    <!-- LIEN POUR STYLES CSS -->
-                    <link rel="stylesheet" type="text/css" href="css/styles.css">
-
-                    <link rel="preconnect" href="https://fonts.googleapis.com">
-                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-                    <!-- POLICE DE CARACTERE -->
-                    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">                 
-                    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-               
-                    <!-- FIN : Les meta données -->
-
-                        <!-- Balise pour le haut de page -->
-                        <header>
-                            <div class="title1" ><h1>Informascience</h1></div>
+    <title>Cyclorbusier</title>
 
 
+</head>
 
 
-                            
-                        <!-- Ici on va faire un slider avec une div class.slider -->
-                                        <div class="slider">
-                                            <!-- Ici il y aura tout le slider, puis des petits slide, comme pour ul et li -->
-                                                        <div class="slides">
-                                                            <div> <a href="codage.html"><img src="images/m3.jpg" alt="image de code"/></a> </div>
-                                                            <div> <a href="conception.html"><img src="images/m2.jpg" alt="image d'un moteur"/></a> </div> <!-- Pour faire un lien sur la photo -->
-                                                            <div class="slide"> <img src="images/m4.jpg">   </div>
-                                                            <div class="slide"> <img src="images/m5.jpg">   </div>
-                                                         </div>
-                                        </div>
+<body>
+    <header>
+
+        <h1>Cyclorbusier</h1>
+
+        <nav>
+          <ul>
+            <li class="menu-deroulant">
+              <a href="#">L'association</a>
+              <ul class="sous-menu">
+                <li><a href="#"></a></li>
+                <li><a href="#">Web & App</a></li>
+                <li><a href="#">Marketing</a></li>
+              </ul>
+            </li>
+            <li class="menu-deroulant">
+              <a href="#">Réalisations</a>
+              <ul class="sous-menu">
+                <li><a href="#">SpaceX</a></li>
+                <li><a href="#">Codeur.com</a></li>
+              </ul>
+            </li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Contactez-nous</a></li>
+          </ul>
+        </nav>
+
+       
 
 
-                        </header>
-                        <!-- On construit la balise pour s'en servir pour la page de style -->
+
+    </header>
 
 
 
 
+    <section class="sliders">
+            <article>
+                <img src="images\velo1.jpg" alt="Image chaine" height="200px">
+            </article>
+
+
+            <article>
+                <img src="images\vélo2.jpg" alt="velo" height="200px">
+            </article>
+
+
+            <article>
+                <img src="images\vélo3.jpg" alt="velo" height="200px">
+            </article>
+
+            <article>
+                <img src="images\vélo4.jpg" alt="velo" height="200px">
+            </article>
+
+
+    </section>
 
 
 
-                    <title>Informascience</title> <!-- Titre de l'onglet -->
-
-                    
-                    
-                </head>
-
-            <body>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quidem sit porro in, delectus nobis at quo,
-            quas sapiente quam molestias possimus, expedita ut eius minus debitis est exercitationem. Aspernatur.</p>
-            
-      
-        
-        
-            </body>
-
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro commodi atque odit deleniti velit doloribus, rerum magni blanditiis dolorum?
-                 Est corrupti pariatur fugit ipsam ipsum suscipit rerum officia consectetur nulla!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ea cupiditate reprehenderit maxime. Dolorem pariatur eius adipisci vitae 
-                laudantium molestiae soluta explicabo sint quis. Et fugit tenetur harum rerum aliquam.</p>
 
 
+    <section>
+        <article>
+        <h2>Photos des sorties</h2>
+        <div class="video">
+            <video width="320" height="200" autoplay loop>
+            <source src="Vidéos\balade1.mp4" type="video/mp4" />
+            </video>
+        </div>
+        </article>
 
+        <article>
+        <h2>Les réparations</h2>
+
+        <p>Une association est un groupement de pl’association, et indiquent le siège social ou son adresse.</p>
+        </article>
+
+            <article>
+                <div>
+                    <button><a href="index.html">Corbusier</a></button>
+                    <button>Laugh</button>
+                    <button>Wink</button>
+                    <button>Shrug</button>
+                    <button>Blush</button>
+                </div>
+            <div>
+                <p>Une association est un groupement de
+            <div>
+                <p>Cray food truck brunch, XOia umami wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid chartreuse put a bird on it. Listicle pickled man bun cornhole heirloom art party.</p>
+            </div>
+            </article>
+    </section>
+
+
+
+</body>
 </html>
