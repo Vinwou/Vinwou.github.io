@@ -137,7 +137,7 @@ article {
  
  .sous-menu > li > a {
    height: 50px;
-   padding-left: 20px;
+   padding-left: 10px;
    width: 100%;
    align-items: center;
    display: flex;
@@ -160,9 +160,15 @@ article {
    0% {
      transform: rotate(0deg);
    }
-   100%{
+   33%{
      transform: rotate(90deg);
    }
+   66% {
+    transform: rotate(180deg);
+  }
+  100%{
+    transform: rotate(450deg);
+  }
  }
  
  .menu-deroulant:hover > a:after{
